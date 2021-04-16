@@ -29,3 +29,21 @@ func divideString (name: String) {
 
 divideString(name: "ВалентинБохонов")
 
+//Задача 4. Вывести строку зеркально Ось → ьсО не используя reverse (посимвольно)
+
+func reversString(string: String) {
+    var chars:[Character] = []
+    var reverseChars:[Character] = []
+    for characters in string {
+        chars.append(characters)
+    }
+    for i in 0...chars.count-1 {
+        reverseChars.append(chars[chars.count-1-i])
+    }
+        let reverseString = String(reverseChars)
+        print(reverseString)
+}
+
+reversString(string: "Вкусная Конфета")
+
+
