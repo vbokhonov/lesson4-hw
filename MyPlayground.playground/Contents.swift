@@ -46,4 +46,17 @@ func reversString(string: String) {
 
 reversString(string: "Вкусная Конфета")
 
+//Задача 5. Добавить запятые в строку как их расставляет калькулятор
+func addCommas (number: String) {
+    var result = ""
+    for (index, element) in number.reversed().enumerated() {
+        result.insert(element, at: result.startIndex)
+        
+        if((index + 1) % 3 == 0 && index != number.count - 1) {
+            result.insert(",", at: result.startIndex)
+        }
+    }
+    print(result)
+}
 
+addCommas(number: "12345678")
