@@ -60,3 +60,8 @@ func addCommas (number: String) {
 }
 
 addCommas(number: "12345678")
+
+//Задача 6. Проверить пароль на надежность от 1 до 5
+//This task was done during a lesson
+
+
