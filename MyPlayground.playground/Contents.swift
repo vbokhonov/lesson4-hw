@@ -19,3 +19,13 @@ func checkSecondName (middleName: String) {
 }
 
 checkSecondName(middleName: "Валентинович")
+
+//Задача 3. Cоздать строку, где слитно написано Ваши ИмяФамилия “IvanVasilevich”. Вам нужно разбить на две отдельных строки из предыдущей создать третью, где они обе будут разделены пробелом
+
+func divideString (name: String) {
+    
+    
+}
+
+divideString(name: "ВалентинБохонов")
+
