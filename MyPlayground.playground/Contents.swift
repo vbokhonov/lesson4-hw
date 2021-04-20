@@ -70,3 +70,16 @@ var arrayOfNumbers = [9, 1, 2, 5, 2, 9, 7, 1, 7, 13, 10, 5, 5, 1]
 var set = Array(Set(arrayOfNumbers))
 set.sort()
 print(set)
+
+//Задача 8. Написать метод, который будет переводить строку в транслит.
+
+func translit(string: String) {
+    let dictionary: [Character: String] = ["а": "a", "б": "b", "в": "v", "д": "d", "Д": "D", "м": "m", "я": "ya"]
+    var convertedString = ""
+    for char in string {
+        convertedString.append(dictionary[char] ?? String(char))
+    }
+    print(convertedString)
+}
+
+translit(string: "Дамба")
