@@ -64,4 +64,9 @@ addCommas(number: "12345678")
 //Задача 6. Проверить пароль на надежность от 1 до 5
 //This task was done during a lesson
 
+//Задача 7. Сортировка массива не встроенным методом по возрастанию + удалить дубликаты [9, 1, 2, 5, 1, 7]
 
+var arrayOfNumbers = [9, 1, 2, 5, 2, 9, 7, 1, 7, 13, 10, 5, 5, 1]
+var set = Array(Set(arrayOfNumbers))
+set.sort()
+print(set)
