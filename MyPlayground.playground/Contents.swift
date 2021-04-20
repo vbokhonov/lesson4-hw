@@ -83,3 +83,17 @@ func translit(string: String) {
 }
 
 translit(string: "Дамба")
+
+//Задача 9. Сделать выборку из массива строк в которых содержится указанная строка [“lada”, “sedan”, “baklazhan”] search “da”
+
+var givenArray = ["lada", "sedan", "baklazhan"]
+var resultArray: [String] = []
+let searchTherm = "da"
+var count = 0
+for item in givenArray {
+    if givenArray[count].contains(searchTherm){
+        resultArray.append(item)
+    }
+    count += 1
+}
+print(resultArray)
