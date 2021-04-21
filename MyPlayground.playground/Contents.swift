@@ -97,3 +97,16 @@ for item in givenArray {
     count += 1
 }
 print(resultArray)
+
+//Задача 10. [String] – antimat [“fuck”, “fak”] “hello my fak” “hello my ***”
+
+func offensiveFilter(sentence: String) {
+    let offensiveArray = ["fuck", "dick", "slut"]
+    for words in sentence.components(separatedBy: " ") {
+        if offensiveArray.contains(words) {
+            //теперь нужно заменять мат в предложени но еще не придумал как
+        }
+    }
+}
+
+offensiveFilter(sentence: "Hello my dear dick")
